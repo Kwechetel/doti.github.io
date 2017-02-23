@@ -4,8 +4,40 @@ html, body {
   height: 100%;
   background-color: #f5f5f5;
 }
+body::-webkit-scrollbar {
+  width: 9px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(21,72,72,1);
+}
+#heading {
+  display: inline-block;
+}
+.typed-cursor{
+  color: #f5f5f5;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 nav ul.topnav {
-  z-index: 9999999;
+  z-index: 9999;
   list-style-type: none;
   text-align: right;
   margin: 0;
@@ -109,6 +141,7 @@ section#about .container-fluid {
 }
 section#about .container-fluid .row {
   height: 85%;
+  text-align: center;
 }
 @media screen and (max-width: 780px) {
   section#about {
@@ -133,6 +166,7 @@ section#about .full-name {
 section#about p {
   font-size: 1.1em;
   margin-bottom: 0;
+  text-align: left;
 }
 section#about ul {
   display: block;
@@ -158,6 +192,8 @@ section#about .fisrt-t {
 }
 section#about .img-circle {
   width: 40%;
+  -webkit-filter: grayscale(20%);
+  filter: grayscale(20%);    
 }
 .go-down {
   height: 15%;
@@ -192,9 +228,18 @@ section#portfolio {
     padding: 1px;
   }
 }
+section#portfolio .thumbnail img {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+section#portfolio .thumbnail img:hover {
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%);
+}
 section#portfolio h2 {
   margin-top: 0;
   color: #f5f5f5;
+  font-size: 3em;
 }
 section#contact {
   margin-bottom: 15em;
@@ -228,6 +273,11 @@ section#contact input, textarea {
 section#contact textarea, input::-webkit-input-placeholder {
   font-size: 1.5em;
 }
+@media screen and (max-width: 780px) {
+  section#contact textarea, input::-webkit-input-placeholder {
+    font-size: 1em;
+  }
+}
 section#contact textarea[type=message] {
   height: 3em;
   padding: 0;
@@ -237,7 +287,7 @@ section#contact textarea, input:focus {
   outline: none;
 }
 .go-top {
-  z-index: 99999999;
+  z-index: 9;
   position: fixed;
   bottom: 5em;
   border: 2px solid rgba(0,95,95,1);
@@ -262,9 +312,71 @@ section#contact textarea, input:focus {
     display: none;
   }
 }
+section#after-contact {
+  z-index: 999;
+  height: 70%;
+  width: 70%;
+  margin: 15%;
+  position: fixed;
+  bottom: -15%;
+  background-color: rgba(0,0,0,0.98);
+  background-image: url(http://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1479988493/wp-123_oayctn.png);
+  background-size: auto;
+  padding-top: 1em;
+  transition: 2s;
+}
+@media screen and (max-width: 780px) {
+  section#after-contact {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    bottom: 0;
+    padding-top: 3em;
+  }
+  section#after-contact .close-btn {
+    top: 2em !important;
+  }
+}
+section#after-contact .close-btn {
+  color: #f5f5f5;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  padding: 10px;
+  cursor: pointer;
+}
+section#after-contact div#content {
+  text-align: center;
+  padding-top: 3em;
+}
+section#after-contact div#content p {
+  display: inline;
+  color: #f5f5f5;
+  font-size: 1.2em;
+}
+section#after-contact #cloned-links .networks {
+  text-align: center;
+  width: 100%;
+  padding-top: 4em;
+}
+section#after-contact #cloned-links .networks .fa {
+  padding-top: 0.5%;
+  color: rgba(0,95,95,1);
+  border: .04em solid rgba(0,95,95,1);
+  border-radius: 100%;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+}
+section#after-contact #cloned-links .networks .fa:hover {
+  color: rgba(225,225,225,1);
+  background-color: rgba(0,95,95,1);
+}
 /* Footer begins */
 footer {
-  z-index: -3333;
+  z-index: -3;
   height: 15em;
   width: 100%;
   position: fixed;
@@ -281,7 +393,7 @@ footer .social-links {
   height: 100%;
 }
 footer .networks {
-  text-align: center;  
+  text-align: right;  
 }
 footer .networks .fa {
   padding-top: 1%;

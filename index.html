@@ -16,12 +16,13 @@
         <img class="img-responsive img-circle" src="http://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1470272131/lastkweEdited_2_w14jvc.jpg">
       </div>
       <div class="col-xs-8">
-        <h1 class="text-center">Whom am I?</h1>
+        <h1 class="text-center">[<span id="heading"></span>]</h1>
         <p><span class="fisrt-t">T</span>his is <span class="full-name">Last Kwechete</span>. I'm a passionate front end web developer and graphics designer. I'm someone who demonstrates an unwavering resolve to do whatever must be done to produce the best long-term results, no matter how difficult.</p>
         <h2 class="text-center">Skills</h2>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
+          <li>Bootstrap</li>
           <li>jQuery</li>
           <li>Graphics Design</li>
         </ul>
@@ -32,10 +33,11 @@
     </div>
   </div>
 </section>
+
 <section id="portfolio">
   <div class="page-layout">
     <div class="heading">
-      <h2 class="text-center">Portfolio</h2>
+      <h2 class="text-center">[ _Portfolio]</h2>
     </div>
     <div class="projects container-fluid">
       <div class="row">
@@ -45,7 +47,7 @@
           </div>
           
           <div class="thumbnail">
-            <img class="img-responsive" src="http://res.cloudinary.com/dqm1ing9o/image/upload/v1470529859/proschool_pwri3r.jpg" />
+            <img class="img-responsive" src="http://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1479965904/team_cyber-inn_qjvhmq.jpg" />
           </div>
           
           <div class="thumbnail hide">
@@ -82,24 +84,26 @@
     </div>
   </div>
 </section>
+
 <section id="contact">
   <div class="page-layout">
     <div class="container-fluid">
-      <h2 class="text-center">Contact</h2>
+      <h2 class="text-center">[Contact_ ]</h2>
       <div class"row">
         <div class="col-xs-8">
           <form>
             <lebel>Full Name</lebel><br>
-            <input type="text" placeholder="Enter your full name here..." required><br>
+            <input type="text" placeholder="Name Surname"><br>
             <lebel>Email</lebel><br>
-            <input type="email" placeholder="Example@mail.com" required><br>
+            <input type="email" placeholder="Example@mail.com"><br>
             <lebel>Message</lebel><br>
-            <textarea type="message"  placeholder="Type here..." required></textarea><br><br>
-            <button type="submit"><i class="fa fa-rocket" aria-hidden="true"></i>Send</button>
+            <textarea type="message"  placeholder="Message"></textarea><br><br><!--
+            <button id="submit" type="submit"><i class="fa fa-rocket" aria-hidden="true"></i>Send</button>-->
           </form>
+          <button id="submit" type="submit"><i class="fa fa-rocket" aria-hidden="true"></i>Send</button>
         </div>
         <div style="text-align: right;" class="col-xs-4">
-          <h3>Physical Address</h3>
+          <h4>[Physical Address]</h4>
           <address>
             <a href="mailto:kwechetel@hotmail.com">Last Kwechete</a><br>
             1st Street<br>            
@@ -112,6 +116,19 @@
   </div>
 </section>
 <a href="#about"><div class="go-top hide"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></div></a>
+
+<section class="hide" id="after-contact">
+  <div class="container-fluid">
+    <div class="close-btn">
+      <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div id="content">
+    <p></p>
+  </div>
+  <div id="cloned-links"></div>
+</section>
+
 <footer>
   <div class="social-links">
     <div class="container-fluid">
@@ -119,7 +136,7 @@
         <h2><i class="fa fa-code" aria-hidden="true"></i>This Page</h2>
         <p>Coded By Last Kwechete</p>
       </div>
-      <div class="col-xs-7 networks">
+      <div id="networks" class="col-xs-7 networks" >
         <h2>Get In Touch</h2>
         <a href="https://www.facebook.com/kwechetel" target="_blank" alt="Facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
         <a href="https://github.com/Kwechetel" target="_blank" alt="Github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>

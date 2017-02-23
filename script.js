@@ -22,7 +22,7 @@ $(document).ready(function(){
         
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
   // Scrow spy for about section
   $("#about").hover(function() {
@@ -51,5 +51,34 @@ $(document).ready(function(){
     $(".go-top").removeClass("hide");
   }, function() {
     $(".go-top").addClass("hide");
+  });
+  
+  $("button#submit").click(function() {
+    $("#after-contact").removeClass("hide");
+    $("body").css("overflow", "hidden");
+    $(".networks").clone().appendTo("#cloned-links");
+  });
+  
+  $(".close-btn").click(function() {
+    $("#after-contact").addClass("hide");
+    $("body").css("overflow", "visible");
+    $("#networks").closest(".networks").remove();
+    event.preventDefault();
+  });
+});
+$(function(){
+  $("#heading").typed({
+    strings: ["Welcome...", "Whom am I?"],
+    typeSpeed: 0,
+    backSpeed:0,
+    backDelay:3500,
+    loop:true
+  });
+  $("#content p").typed({
+    strings: ["Sorry, contact form is currently disabled._ _", "Please contact me directly on social networks below:_ _"],
+    typeSpeed: 0,
+    backSpeed:0,
+    backDelay:3500,
+    loop:true
   });
 });
