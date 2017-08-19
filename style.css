@@ -131,7 +131,7 @@ section#about {
   color: rgba(223,223,223,1);
   padding: 8em 0 2em;
   background-color: rgba(223,223,223,0.85);
-  background-image: url(http://res.cloudinary.com/dqm1ing9o/image/upload/q_auto/v1479899791/Wallpaper_tivdzi.jpg);
+  background-image: url(https://res.cloudinary.com/dqm1ing9o/image/upload/q_auto/v1479899791/Wallpaper_tivdzi.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ section#after-contact {
   position: fixed;
   bottom: -15%;
   background-color: rgba(0,0,0,0.98);
-  background-image: url(http://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1479988493/wp-123_oayctn.png);
+  background-image: url(https://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1479988493/wp-123_oayctn.png);
   background-size: auto;
   padding-top: 1em;
   transition: 2s;
@@ -382,7 +382,7 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: #f5f5f5;
-  background-image: url(http://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1470416011/iconicwallpaper_rctc2f.png);
+  background-image: url(https://res.cloudinary.com/dqm1ing9o/image/upload/q_100/v1470416011/iconicwallpaper_rctc2f.png);
   background-position: top;
 }
 @media screen and (max-width:780px) {

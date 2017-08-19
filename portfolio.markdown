@@ -2,6 +2,6 @@ Portfolio
 ---------
 
 
-A [Pen](https://codepen.io/kwechetel/pen/VjGqpZ) by [Last Kwechete](http://codepen.io/kwechetel) on [CodePen](http://codepen.io/).
+A [Pen](https://codepen.io/kwechetel/pen/VjGqpZ) by [Last Kwechete](https://codepen.io/kwechetel) on [CodePen](https://codepen.io).
 
 [License](https://codepen.io/kwechetel/pen/VjGqpZ/license).
